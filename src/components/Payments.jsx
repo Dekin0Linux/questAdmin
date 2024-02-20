@@ -10,7 +10,7 @@ function Payments() {
     const getLearners = async () => {
         try {
             const fetchlearners = await axios.get(`${API_URL}/payment`);
-            let filteredPayment =fetchlearners.data.getPayments.filter((payment) => payment.isComplete === true);
+            let filteredPayment =fetchlearners.data.getPayments.filter((payment) => payment.paymentStatus === 'success');
             console.log(fetchlearners.data.getPayments)
             setLearners(filteredPayment);
         } catch (error) {
