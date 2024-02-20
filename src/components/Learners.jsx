@@ -51,6 +51,7 @@ function Learners() {
                         <th className="border p-2">Has License</th>
                         <th className="border p-2">License No.</th>
                         <th className="border p-2">Has Laptop</th>
+                        <th className="border p-2">Circuit</th>
                         <th className="border p-2">Laptop Condition</th>
                     </tr>
                 </thead>
@@ -70,6 +71,7 @@ function Learners() {
                        <td className="border p-2">{learner.isLincesed}</td>
                        <td className="border p-2">{learner.lincenseNumber}</td>
                        <td className="border p-2">{learner.laptopNeeded}</td>
+                       <td className="border p-2">{learner.circuit}</td>
                        <td className="border p-2">{learner.isGoodCondition}</td>
                    </tr>
                     ))}
