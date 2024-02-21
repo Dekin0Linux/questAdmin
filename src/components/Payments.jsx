@@ -58,7 +58,7 @@ function Payments() {
                        <td className="border p-2">{learner.user.firstname} {learner.user.middlename} {learner.user.lastname}</td>
                        <td className="border p-2"><a href={`tel:${learner.user.phone}`}>{learner.user.phone}</a></td>
                        <td className="border p-2 text-xl font-bold">{learner.amount} gh</td>
-                       <td className="border p-2">{learner.isComplete && learner.amount == 65 ? 'Half Paid' : 'Full Paid'}</td>
+                       <td className="border p-2">{learner.amount >= 65 ? 'Full Paid' : 'Half Paid'}</td>
                        <td className="border p-2">{learner.userNo}</td>
                        <td className="border p-2">{new Date(learner?.createdAt).toLocaleDateString()}</td>
 

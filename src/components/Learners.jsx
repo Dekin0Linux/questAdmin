@@ -36,7 +36,7 @@ function Learners() {
         <div>
             <h2>List of Learners ({learners.length})</h2>
             <table className="table-auto border-separate border-spacing-2 border border-slate-500">
-            <thead>
+                <thead>
                     <tr >
                         <th className="border p-2">SN</th>
                         <th className="border p-2">Full Name</th>
