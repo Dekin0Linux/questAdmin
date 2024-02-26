@@ -73,7 +73,7 @@ function Payments() {
             <div className="pagination flex gap-10 my-5">
                 <button onClick={handlePrevPage} disabled={currentPage === 1} className='bg-gray-200 p-3'>Previous</button>
                 <span className='bg-gray-200 p-3'>{currentPage}</span>
-                <button className='bg-gray-200 p-3' onClick={handleNextPage} disabled={currentPage == 1}>Next</button>
+                <button className='bg-gray-200 p-3' onClick={handleNextPage} disabled={currentPage == learners.length ? true : false}>Next</button>
             </div>
         </div>
     )
