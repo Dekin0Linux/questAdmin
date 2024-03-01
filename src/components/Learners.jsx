@@ -10,7 +10,7 @@ function Learners() {
     const getLearners = async () => {
         try {
             const fetchlearners = await axios.get(`${API_URL}/user`);
-            let filteredLearners = fetchlearners.data.filter((learner) => learner.role === 'learner');
+            let filteredLearners = fetchlearners.data.filter((learner) => learner.role != 'trainer');
             setLearners(filteredLearners);
         } catch (error) {
             console.error('Error fetching learners:', error);
